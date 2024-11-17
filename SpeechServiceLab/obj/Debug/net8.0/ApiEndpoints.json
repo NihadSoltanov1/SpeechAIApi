@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
+    "Method": "RecognizeSpeaker",
+    "RelativePath": "api/Speech/recognize-speaker",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "audioFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
+    "Method": "SpeechToText",
+    "RelativePath": "api/Speech/speech-to-text",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "audioFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
+    "Method": "TextToSpeech",
+    "RelativePath": "api/Speech/text-to-speech",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
+    "Method": "Translate",
+    "RelativePath": "api/Speech/translate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SpeechServiceLab.Models.TranslateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
