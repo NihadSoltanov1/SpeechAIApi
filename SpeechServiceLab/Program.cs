@@ -1,4 +1,4 @@
-using SpeechServiceLab.Services;
+﻿using SpeechServiceLab.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,7 +33,6 @@ builder.Services.AddSwaggerGen(c =>
 
 // Register Azure services as HTTP clients
 builder.Services.AddHttpClient<AzureSpeechService>();
-builder.Services.AddHttpClient<AzureSpeakerRecognitionService>();
 builder.Services.AddHttpClient<AzureTranslationService>();
 
 var app = builder.Build();

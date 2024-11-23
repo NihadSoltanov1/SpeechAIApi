@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Services/SpeechService.cs \
+obj\Debug\net8.0\Services/SpeechServiceGrpc.cs: Services/speech_service.proto

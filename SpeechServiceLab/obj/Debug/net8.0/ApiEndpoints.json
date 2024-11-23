@@ -1,16 +1,16 @@
 [
   {
     "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
-    "Method": "RecognizeSpeaker",
-    "RelativePath": "api/Speech/recognize-speaker",
-    "HttpMethod": "POST",
+    "Method": "GetAudio",
+    "RelativePath": "api/Speech/audio/{requestId}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "audioFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
+        "Name": "requestId",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -27,6 +27,22 @@
         "Name": "audioFile",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpeechServiceLab.Controllers.SpeechController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Speech/status/{requestId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestId",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
