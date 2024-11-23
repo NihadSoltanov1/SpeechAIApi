@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "SpeechServiceLab.gRPC";
+
+service SpeechService {
+  rpc SpeechToText (AudioRequest) returns (SpeechResponse);
+  rpc TextToSpeech (TextRequest) returns (AudioResponse);
+  rpc Translate (TranslateRequest) returns (TranslateResponse);
+}
+
+message AudioRequest {
+  bytes audioData = 1;
+}
+
+message TextRequest {
+  string text = 1;
+}
+
+message TranslateRequest {
+  string text = 1;
+  string toLanguage = 2;
+}
+
+message SpeechResponse {
+  string text = 1;
+}
+
+message AudioResponse {
+  bytes audioData = 1;
+}
+
+message TranslateResponse {
+  string translatedText = 1;
+}

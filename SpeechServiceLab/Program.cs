@@ -1,9 +1,11 @@
 ﻿using SpeechServiceLab.Services;
+using SpeechServiceLab.gRPC;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllers();
+builder.Services.AddGrpc();
 
 // Add CORS configuration
 builder.Services.AddCors(options =>
@@ -27,7 +29,6 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API for Text-to-Speech, Speech-to-Text, Translation, and Speaker Recognition"
     });
 
-    // Add file upload support for Swagger
     c.OperationFilter<FileUploadOperationFilter>();
 });
 
@@ -53,4 +54,5 @@ app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.MapGrpcService<GrpcSpeechService>();
 app.Run();

@@ -70,3 +70,43 @@ C:\Users\mrsol\Desktop\New folder\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\
 C:\Users\mrsol\Desktop\New folder\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.Client.dll
 C:\Users\mrsol\Desktop\New folder\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
 C:\Users\mrsol\Desktop\New folder\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.csproj.AssemblyReference.cache
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.AssemblyInfoInputs.cache
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.AssemblyInfo.cs
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.csproj.CoreCompileInputs.cache
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.sourcelink.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\refint\SpeechServiceLab.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.pdb
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\appsettings.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\SpeechServiceLab.exe
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\SpeechServiceLab.deps.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\SpeechServiceLab.runtimeconfig.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\SpeechServiceLab.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\SpeechServiceLab.pdb
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets\msbuild.SpeechServiceLab.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets\msbuild.build.SpeechServiceLab.props
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SpeechServiceLab.props
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SpeechServiceLab.props
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\scopedcss\bundle\SpeechServiceLab.styles.css
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechSe.1A91B2F1.Up2Date
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\SpeechServiceLab.genruntimeconfig.cache
+C:\Users\mrsol\Desktop\SpeechAIApi\SpeechServiceLab\obj\Debug\net8.0\ref\SpeechServiceLab.dll

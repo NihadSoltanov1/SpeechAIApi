@@ -29,21 +29,6 @@ namespace SpeechServiceLab.Controllers
             _translationService = translationService;
         }
 
-        private string ComputeHash(IFormFile file)
-        {
-            using var md5 = MD5.Create();
-            using var stream = file.OpenReadStream();
-            var hash = md5.ComputeHash(stream);
-            return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
-        }
-
-        private string ComputeHash(string text)
-        {
-            using var md5 = MD5.Create();
-            var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(text));
-            return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
-        }
-
         [HttpPost("speech-to-text")]
         public async Task<IActionResult> SpeechToText(IFormFile audioFile)
         {
@@ -52,28 +37,7 @@ namespace SpeechServiceLab.Controllers
                 return BadRequest("Audio file is required.");
             }
 
-            var fileHash = ComputeHash(audioFile);
-
-            if (HashToRequestIdMap.TryGetValue(fileHash, out var existingRequestId) &&
-                StateStore.TryGetValue(existingRequestId, out var existingState) &&
-                DateTime.UtcNow - existingState.Timestamp <= RequestTimeout)
-            {
-                return Ok(new
-                {
-                    Message = "This file is already being processed. Please wait.",
-                    RequestId = existingRequestId
-                });
-            }
-
             var requestId = Guid.NewGuid().ToString();
-            HashToRequestIdMap[fileHash] = requestId;
-            StateStore[requestId] = new ProcessState
-            {
-                RequestId = requestId,
-                Status = "Processing",
-                Timestamp = DateTime.UtcNow
-            };
-
             using var memoryStream = new MemoryStream();
             await audioFile.CopyToAsync(memoryStream);
 
@@ -82,13 +46,11 @@ namespace SpeechServiceLab.Controllers
                 try
                 {
                     var result = await _speechService.SpeechToTextAsync(memoryStream.ToArray());
-                    StateStore[requestId].Status = "Completed";
-                    StateStore[requestId].Result = result;
+                    StateStore[requestId] = new ProcessState { Status = "Completed", Result = result };
                 }
                 catch (Exception ex)
                 {
-                    StateStore[requestId].Status = "Failed";
-                    StateStore[requestId].Result = ex.Message;
+                    StateStore[requestId] = new ProcessState { Status = "Failed", Result = ex.Message };
                 }
             });
 
@@ -98,45 +60,17 @@ namespace SpeechServiceLab.Controllers
         [HttpPost("text-to-speech")]
         public async Task<IActionResult> TextToSpeech([FromBody] string text)
         {
-            if (string.IsNullOrWhiteSpace(text))
-            {
-                return BadRequest("Text is required.");
-            }
-
-            var textHash = ComputeHash(text);
-
-            if (HashToRequestIdMap.TryGetValue(textHash, out var existingRequestId) &&
-                StateStore.TryGetValue(existingRequestId, out var existingState) &&
-                DateTime.UtcNow - existingState.Timestamp <= RequestTimeout)
-            {
-                return Ok(new
-                {
-                    Message = "This text is already being processed. Please wait.",
-                    RequestId = existingRequestId
-                });
-            }
-
             var requestId = Guid.NewGuid().ToString();
-            HashToRequestIdMap[textHash] = requestId;
-            StateStore[requestId] = new ProcessState
-            {
-                RequestId = requestId,
-                Status = "Processing",
-                Timestamp = DateTime.UtcNow
-            };
-
             _ = Task.Run(async () =>
             {
                 try
                 {
                     var audioData = await _speechService.TextToSpeechAsync(text);
-                    StateStore[requestId].Status = "Completed";
-                    StateStore[requestId].AudioData = audioData;
+                    StateStore[requestId] = new ProcessState { Status = "Completed", AudioData = audioData };
                 }
                 catch (Exception ex)
                 {
-                    StateStore[requestId].Status = "Failed";
-                    StateStore[requestId].Result = ex.Message;
+                    StateStore[requestId] = new ProcessState { Status = "Failed", Result = ex.Message };
                 }
             });
 
@@ -146,45 +80,17 @@ namespace SpeechServiceLab.Controllers
         [HttpPost("translate")]
         public async Task<IActionResult> Translate([FromBody] TranslateRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.Text) || string.IsNullOrWhiteSpace(request.ToLanguage))
-            {
-                return BadRequest("Text and target language are required.");
-            }
-
-            var textHash = ComputeHash($"{request.Text}-{request.ToLanguage}");
-
-            if (HashToRequestIdMap.TryGetValue(textHash, out var existingRequestId) &&
-                StateStore.TryGetValue(existingRequestId, out var existingState) &&
-                DateTime.UtcNow - existingState.Timestamp <= RequestTimeout)
-            {
-                return Ok(new
-                {
-                    Message = "This translation is already being processed. Please wait.",
-                    RequestId = existingRequestId
-                });
-            }
-
             var requestId = Guid.NewGuid().ToString();
-            HashToRequestIdMap[textHash] = requestId;
-            StateStore[requestId] = new ProcessState
-            {
-                RequestId = requestId,
-                Status = "Processing",
-                Timestamp = DateTime.UtcNow
-            };
-
             _ = Task.Run(async () =>
             {
                 try
                 {
-                    var translatedText = await _translationService.TranslateTextAsync(request.Text, request.ToLanguage);
-                    StateStore[requestId].Status = "Completed";
-                    StateStore[requestId].Result = translatedText;
+                    var result = await _translationService.TranslateTextAsync(request.Text, request.ToLanguage);
+                    StateStore[requestId] = new ProcessState { Status = "Completed", Result = result };
                 }
                 catch (Exception ex)
                 {
-                    StateStore[requestId].Status = "Failed";
-                    StateStore[requestId].Result = ex.Message;
+                    StateStore[requestId] = new ProcessState { Status = "Failed", Result = ex.Message };
                 }
             });
 
@@ -194,25 +100,17 @@ namespace SpeechServiceLab.Controllers
         [HttpGet("status/{requestId}")]
         public IActionResult GetStatus(string requestId)
         {
-            if (!StateStore.ContainsKey(requestId))
+            if (!StateStore.TryGetValue(requestId, out var state))
             {
                 return NotFound("Request ID not found.");
             }
-
-            var state = StateStore[requestId];
             return Ok(state);
         }
 
         [HttpGet("audio/{requestId}")]
         public IActionResult GetAudio(string requestId)
         {
-            if (!StateStore.ContainsKey(requestId))
-            {
-                return NotFound("Request ID not found.");
-            }
-
-            var state = StateStore[requestId];
-            if (state.Status != "Completed" || state.AudioData == null)
+            if (!StateStore.TryGetValue(requestId, out var state) || state.AudioData == null)
             {
                 return BadRequest("Audio file is not ready.");
             }
@@ -223,10 +121,8 @@ namespace SpeechServiceLab.Controllers
 
     public class ProcessState
     {
-        public string RequestId { get; set; }
         public string Status { get; set; }
         public string Result { get; set; }
         public byte[] AudioData { get; set; }
-        public DateTime Timestamp { get; set; }
     }
 }
