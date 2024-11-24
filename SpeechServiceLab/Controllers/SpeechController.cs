@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SpeechServiceLab.Services;
-using SpeechServiceLab.Models;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.IO;
-using System.Security.Cryptography;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using SpeechServiceLab.Models;
+using SpeechServiceLab.Services;
 
 namespace SpeechServiceLab.Controllers
 {
@@ -17,9 +15,11 @@ namespace SpeechServiceLab.Controllers
         private readonly AzureSpeechService _speechService;
         private readonly AzureTranslationService _translationService;
 
-        private static readonly ConcurrentDictionary<string, ProcessState> StateStore = new();
-        private static readonly ConcurrentDictionary<string, string> HashToRequestIdMap = new();
+        // Request zamanları ve ID'lerini saklama
+        private static readonly ConcurrentDictionary<string, (DateTime lastRequestTime, string lastRequestId)> RequestInfo = new();
+        private static readonly ConcurrentDictionary<string, ProcessState> StateStore = new(); // Eksikse ekledik
         private static readonly TimeSpan RequestTimeout = TimeSpan.FromSeconds(30);
+        private static readonly object _requestLock = new(); // Senkronizasyon için referans türü
 
         public SpeechController(
             AzureSpeechService speechService,
@@ -29,9 +29,33 @@ namespace SpeechServiceLab.Controllers
             _translationService = translationService;
         }
 
+        private (bool canProcess, string lastRequestId) CanProcessRequest(string key)
+        {
+            lock (_requestLock)
+            {
+                if (RequestInfo.TryGetValue(key, out var requestInfo))
+                {
+                    if (DateTime.UtcNow - requestInfo.lastRequestTime < RequestTimeout)
+                    {
+                        return (false, requestInfo.lastRequestId);
+                    }
+                }
+
+                var newRequestId = Guid.NewGuid().ToString();
+                RequestInfo[key] = (DateTime.UtcNow, newRequestId); // Yeni zaman ve ID kaydediliyor
+                return (true, newRequestId);
+            }
+        }
+
         [HttpPost("speech-to-text")]
         public async Task<IActionResult> SpeechToText(IFormFile audioFile)
         {
+            var (canProcess, lastRequestId) = CanProcessRequest("speech-to-text");
+            if (!canProcess)
+            {
+                return BadRequest($"You must wait 30 seconds between requests for speech-to-text. Last request ID: {lastRequestId}");
+            }
+
             if (audioFile == null || audioFile.Length == 0)
             {
                 return BadRequest("Audio file is required.");
@@ -60,6 +84,12 @@ namespace SpeechServiceLab.Controllers
         [HttpPost("text-to-speech")]
         public async Task<IActionResult> TextToSpeech([FromBody] string text)
         {
+            var (canProcess, lastRequestId) = CanProcessRequest("text-to-speech");
+            if (!canProcess)
+            {
+                return BadRequest($"You must wait 30 seconds between requests for text-to-speech. Last request ID: {lastRequestId}");
+            }
+
             var requestId = Guid.NewGuid().ToString();
             _ = Task.Run(async () =>
             {
@@ -80,6 +110,12 @@ namespace SpeechServiceLab.Controllers
         [HttpPost("translate")]
         public async Task<IActionResult> Translate([FromBody] TranslateRequest request)
         {
+            var (canProcess, lastRequestId) = CanProcessRequest("translate");
+            if (!canProcess)
+            {
+                return BadRequest($"You must wait 30 seconds between requests for translation. Last request ID: {lastRequestId}");
+            }
+
             var requestId = Guid.NewGuid().ToString();
             _ = Task.Run(async () =>
             {

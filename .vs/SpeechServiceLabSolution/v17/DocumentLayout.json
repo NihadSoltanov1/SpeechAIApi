@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\",
+  "WorkspaceRootPath": "C:\\Users\\mrsol\\SpeechAIApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\services\\azuretranslationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\services\\azuretranslationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\services\\azurespeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\services\\azurespeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\grpc\\grpcspeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\grpc\\grpcspeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\controllers\\speechcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\controllers\\speechcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\controllers\\speechcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\protos\\speechservice.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\protos\\speechservice.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\protos\\speechservice.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\services\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\services\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\services\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\models\\translaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\services\\azuretranslationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\services\\azuretranslationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\services\\azurespeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\services\\azurespeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\models\\translaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\models\\translaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\desktop\\speechaiapi\\speechservicelab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|c:\\users\\mrsol\\speechaiapi\\speechservicelab\\grpc\\grpcspeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF46900-3B97-4092-91E5-C4EEB1CDE53F}|SpeechServiceLab\\SpeechServiceLab.csproj|solutionrelative:speechservicelab\\grpc\\grpcspeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Program.cs",
               "RelativeDocumentMoniker": "SpeechServiceLab\\Program.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Program.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Program.cs",
               "RelativeToolTip": "SpeechServiceLab\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:15:40.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileUploadOperationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
-              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
-              "RelativeToolTip": "SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:17:28.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AzureTranslationService.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureTranslationService.cs",
-              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\AzureTranslationService.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureTranslationService.cs",
-              "RelativeToolTip": "SpeechServiceLab\\Services\\AzureTranslationService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwBUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:17:24.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T22:15:40.888Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FileUploadOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
+              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
+              "RelativeToolTip": "SpeechServiceLab\\Services\\FileUploadOperationFilter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAzwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:17:28.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AzureTranslationService.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureTranslationService.cs",
+              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\AzureTranslationService.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureTranslationService.cs",
+              "RelativeToolTip": "SpeechServiceLab\\Services\\AzureTranslationService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:17:24.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SpeechService.proto",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Protos\\SpeechService.proto",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Protos\\SpeechService.proto",
               "RelativeDocumentMoniker": "SpeechServiceLab\\Protos\\SpeechService.proto",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Protos\\SpeechService.proto",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Protos\\SpeechService.proto",
               "RelativeToolTip": "SpeechServiceLab\\Protos\\SpeechService.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-11-23T22:17:16.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T22:17:16.226Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TranslateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Models\\TranslateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Models\\TranslateRequest.cs",
               "RelativeDocumentMoniker": "SpeechServiceLab\\Models\\TranslateRequest.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Models\\TranslateRequest.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Models\\TranslateRequest.cs",
               "RelativeToolTip": "SpeechServiceLab\\Models\\TranslateRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:17:09.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\appsettings.json",
-              "RelativeDocumentMoniker": "SpeechServiceLab\\appsettings.json",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\appsettings.json",
-              "RelativeToolTip": "SpeechServiceLab\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-23T22:03:31.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AzureSpeechService.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureSpeechService.cs",
-              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\AzureSpeechService.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureSpeechService.cs",
-              "RelativeToolTip": "SpeechServiceLab\\Services\\AzureSpeechService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:01:49.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T22:17:09.993Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\appsettings.json",
+              "RelativeDocumentMoniker": "SpeechServiceLab\\appsettings.json",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\appsettings.json",
+              "RelativeToolTip": "SpeechServiceLab\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-23T22:03:31.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AzureSpeechService.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureSpeechService.cs",
+              "RelativeDocumentMoniker": "SpeechServiceLab\\Services\\AzureSpeechService.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Services\\AzureSpeechService.cs",
+              "RelativeToolTip": "SpeechServiceLab\\Services\\AzureSpeechService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:01:49.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SpeechController.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Controllers\\SpeechController.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Controllers\\SpeechController.cs",
               "RelativeDocumentMoniker": "SpeechServiceLab\\Controllers\\SpeechController.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\Controllers\\SpeechController.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\Controllers\\SpeechController.cs",
               "RelativeToolTip": "SpeechServiceLab\\Controllers\\SpeechController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T21:56:30.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "GrpcSpeechService.cs",
-              "DocumentMoniker": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
+              "DocumentMoniker": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
               "RelativeDocumentMoniker": "SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
-              "ToolTip": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
+              "ToolTip": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
               "RelativeToolTip": "SpeechServiceLab\\gRPC\\GrpcSpeechService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T21:53:47.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T21:53:47.22Z"
             }
           ]
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj": {}
+    "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj": {
+    "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
+        "projectUniqueName": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
         "projectName": "SpeechServiceLab",
-        "projectPath": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
+        "projectPath": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
         "packagesPath": "C:\\Users\\mrsol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\obj\\",
+        "outputPath": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

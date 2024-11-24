@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IHBJom0/6H0=",
+  "dgSpecHash": "VkndMC2kSSo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrsol\\Desktop\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
+  "projectFilePath": "C:\\Users\\mrsol\\SpeechAIApi\\SpeechServiceLab\\SpeechServiceLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrsol\\.nuget\\packages\\google.protobuf\\3.28.3\\google.protobuf.3.28.3.nupkg.sha512",
     "C:\\Users\\mrsol\\.nuget\\packages\\grpc.aspnetcore\\2.67.0\\grpc.aspnetcore.2.67.0.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpeechServiceLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43e4495eb30e82cc225a4db7a2127a32ca44070c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8861f687204fa16faa5bdb2b1a8cb26375dea5b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpeechServiceLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpeechServiceLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
